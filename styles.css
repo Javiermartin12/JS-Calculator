@@ -1,0 +1,274 @@
+<<<<<<< HEAD
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ebebeb;
+  min-height: 50rem;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.calculator-container {
+  position: relative;
+  width: 20rem;
+  margin: 50px auto;
+}
+
+#equal {
+  display: grid;
+  grid-row: 6;
+  grid-column: 4;
+}
+
+.toggle-switch {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s ease;
+}
+
+.dark-mode .toggle-switch {
+  background-color: #353434;
+}
+
+.dark-mode .toggle-switch::before {
+  transform: translateX(20px);
+}
+
+.calculator {
+  background-color: #ffffff;
+  height: 35rem;
+  width: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.display {
+  grid-column: 1/5;
+  padding: 9rem 1rem 0rem 0;
+  background-color: #f4f1f1;
+  text-align: right;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-size: 3rem;
+  color: #333;
+}
+
+.btn {
+  background-color: #fafafa;
+  margin: 0.3rem;
+  border: 0;
+  border-radius: 45%;
+  outline: none;
+  font-size: 2rem;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+}
+
+.btn:hover {
+  background-color: #ebebeb;
+}
+
+body.dark-mode .calculator {
+  background-color: #555555;
+}
+
+body.dark-mode .display {
+  background-color: #313131;
+  color: #71e871;
+}
+
+body.dark-mode .btn {
+  background-color: #535252;
+  color: #8ee48e;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #504f4f;
+=======
+/* a continuacion usamos un selecotr universal 
+usar estos estilos a nivel de toda la web*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Aqui tendriamos el body donde alinemos la calculadora
+para que se centre con los respectivos estilos usan grid*/
+body {
+    background-color: #ebebeb;
+    min-height: 50rem;
+    display: grid;
+    place-items: center;
+    transition: background-color 0.2s ease; 
+}
+
+/*con este estilo regulariamos el tamaño de nuestra 
+calculadora y la posicion*/
+.calculator-container {
+    position: relative;
+    width: 20rem;
+    margin: 50px auto;
+}
+/* con este bloque ajustamos el igual
+a la 4 fila donde deberia estar*/
+ #equal {
+    display: grid;
+    grid-row: 6;
+    grid-column: 4;
+}
+
+
+/*este elemento seria el tipo de boton redondo que 
+cuando lo pulsas va de izq a der,con sus respectivos tamaños
+y las medidas del boton, situado en la parte superior
+derecha*/
+.toggle-switch {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/*con este elemento realizamos el cambio de 
+transicion del boton de un lugar a otro
+para que cumpla su funcion*/
+.toggle-switch::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s ease;
+}
+
+/*este color se ha asignado para cuando esta en modo
+Noche el boton por que cuando esta en modo dia cambia 
+a blanco*/
+.dark-mode .toggle-switch {
+    background-color: #353434; 
+}
+
+/*con esta funcion nuestro boton se desplaza
+horizontalmente en el eje x 20 pixeles*/
+.dark-mode .toggle-switch::before {
+    transform: translateX(20px);
+}
+
+/*Aqui tenemos el diseño de nuetra calculadora con el
+numero de columnas usando grid y los siguientes estilos*/
+.calculator {
+    background-color: #ffffff;
+    height: 35rem;
+    width: 20rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2rem;
+    transition: background-color 0.3s ease; 
+}
+
+
+/*Seguimos con nuestra pantalla y como vemos
+primero aparece en el grid su posicion con sus respectivo 
+tamaño y con ese padding que le da la sensacion de pantalla 
+infinita, muy bonito*/
+.display {
+    grid-column: 1/5;
+    padding: 9rem 1rem 0rem 0;
+    background-color: #f4f1f1;
+    text-align: right;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-size: 3rem;
+    color: #333; 
+}
+
+/*Aqui tenemos el diseño de los botones
+como podemos observar esta todo centrado con su tamaño
+y su borde totalmente redondo*/
+.btn {
+    background-color: #fafafa;
+    margin: 0.5rem;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    font-size: 2rem;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    color: #333; 
+    
+}
+
+/*Aqui tenemos nuestro color de fondo
+de nuestros botones en modo light*/
+.btn:hover {
+    background-color: #ebebeb;
+}
+
+/*Aqui tenemos el collor de fondo 
+que tiene alrededor nuestros botones */
+body.dark-mode .calculator {
+    background-color: #555555; 
+}
+
+/*Aqui tendria,os nuestro color de fondo de display en
+modo night*/
+body.dark-mode .display {
+    background-color: #313131; 
+    color: #71e871; 
+}
+
+/*Nuestro color de fondo wn modo night*/
+body.dark-mode .btn {
+    background-color: #535252; 
+    color: #8ee48e; 
+}
+/*y nuestro color de fondo en 
+modo night*/
+body.dark-mode .btn:hover {
+    background-color: #504f4f; 
+>>>>>>> 52b0cb27... Project finished
+}
