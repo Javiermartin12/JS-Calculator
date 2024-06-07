@@ -1,6 +1,5 @@
 name: CI JS Calculator
 
-
 on: 
   push: 
     branches: 
@@ -15,14 +14,14 @@ jobs:
 
     steps:
 
-      - name: Checkout del repositorio
+      - name: Checkout of repository
         uses: actions/checkout@v4
 
 
-      - name: Configurar Node.js
+      - name: Settings Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20' 
 
-      - name: Construir el proyecto
-        run: echo "Construcción completada correctamente"
+      - name: Build of proyect
+        run: echo "Build is completed"
