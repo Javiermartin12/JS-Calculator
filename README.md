@@ -1,5 +1,7 @@
 # JS Calculator
 
+<img src="./assets/Grabación de pantalla 2024-07-25 a las 20.24.01.mp4" width=900rem height=600rem alt="User manage" />
+
 JS Calculator is a simple and easy-to-use calculator application developed with JavaScript,
 HTML5, and CSS3. This calculator allows you to perform basic arithmetic operations such as
 addition, subtraction, multiplication, and division.
