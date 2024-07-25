@@ -1,8 +1,7 @@
 # JS Calculator
 
-<video src="./assets/Grabación de pantalla 2024-07-25 a las 20.24.01.mp4" width="900" height="600" controls>
-  Your browser does not support the video tag.
-</video>
+<img src="./assets/Captura de pantalla 2024-07-25 a las 20.37.27.png" width=700rem height=400rem alt="Calculator" />
+<img src="./assets/Captura de pantalla 2024-07-25 a las 20.37.54.png" width=700rem height=400rem alt="Calculator" />
 
 
 JS Calculator is a simple and easy-to-use calculator application developed with JavaScript,
