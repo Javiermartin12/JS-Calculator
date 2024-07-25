@@ -1,7 +1,7 @@
 # JS Calculator
 
-<img src="./assets/Captura de pantalla 2024-07-25 a las 20.37.27.png" width=400rem height=700rem alt="Calculator" />
-<img src="./assets/Captura de pantalla 2024-07-25 a las 20.37.54.png" width=400rem height=700rem alt="Calculator" />
+<img src="./assets/Captura de pantalla 2024-07-25 a las 20.37.27.png" width=500rem height=600rem alt="Calculator" />
+<img src="./assets/Captura de pantalla 2024-07-25 a las 20.37.54.png" width=500rem height=600rem alt="Calculator" />
 
 
 JS Calculator is a simple and easy-to-use calculator application developed with JavaScript,
